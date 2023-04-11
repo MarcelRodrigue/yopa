@@ -1157,10 +1157,6 @@ input:checked + .toggle-bg {
   height: 1.5rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .h-9 {
   height: 2.25rem;
 }
@@ -1273,6 +1269,14 @@ input:checked + .toggle-bg {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1309,6 +1313,14 @@ input:checked + .toggle-bg {
   justify-content: space-between;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1326,28 +1338,20 @@ input:checked + .toggle-bg {
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
-.self-center {
-  align-self: center;
-}
-
 .overflow-hidden {
   overflow: hidden;
-}
-
-.whitespace-nowrap {
-  white-space: nowrap;
 }
 
 .rounded {
   border-radius: 0.25rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-l-lg {
@@ -1398,10 +1402,6 @@ input:checked + .toggle-bg {
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
 }
 
-.bg-blue-900\/80 {
-  background-color: rgb(35 56 118 / 0.8);
-}
-
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1427,6 +1427,10 @@ input:checked + .toggle-bg {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.bg-gray-900\/80 {
+  background-color: rgb(17 24 39 / 0.8);
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1434,15 +1438,6 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 196 141 / var(--tw-bg-opacity));
-}
-
-.bg-blue-900\/70 {
-  background-color: rgb(35 56 118 / 0.7);
 }
 
 .bg-opacity-50 {
@@ -1471,6 +1466,11 @@ input:checked + .toggle-bg {
 
 .p-4 {
   padding: 1rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-2 {
@@ -1524,11 +1524,6 @@ input:checked + .toggle-bg {
   text-align: center;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1542,6 +1537,11 @@ input:checked + .toggle-bg {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1568,6 +1568,15 @@ input:checked + .toggle-bg {
   line-height: 2.25rem;
 }
 
+.tracking-widest {
+  letter-spacing: .25em;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
@@ -1586,6 +1595,11 @@ input:checked + .toggle-bg {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(14 159 110 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1624,12 +1638,6 @@ input:checked + .toggle-bg {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.backdrop-brightness-90 {
-  --tw-backdrop-brightness: brightness(.9);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .backdrop-brightness-75 {
@@ -1901,20 +1909,8 @@ input:checked + .toggle-bg {
     padding-bottom: 0.5rem;
   }
 
-  .md\:pb-1 {
-    padding-bottom: 0.25rem;
-  }
-
   .md\:pl-3 {
     padding-left: 0.75rem;
-  }
-
-  .md\:pr-3 {
-    padding-right: 0.75rem;
-  }
-
-  .md\:pt-1 {
-    padding-top: 0.25rem;
   }
 
   .md\:font-bold {

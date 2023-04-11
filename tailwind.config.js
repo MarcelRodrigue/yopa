@@ -10,7 +10,11 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('symphoni_banner.jpeg')",
-      }
+      },
+      letterSpacing: {
+        widest: '.25em',
+           
+              }
     },
   },
   plugins: [
