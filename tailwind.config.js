@@ -11,6 +11,9 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('symphoni_banner.jpeg')",
       },
+      
+              colors: {
+                mybg: '#22c55e',},
       letterSpacing: {
         widest: '.25em',
            
