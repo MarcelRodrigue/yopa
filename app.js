@@ -87,7 +87,6 @@ class DraggingEvent {
 }
 
 
-
 class CardCarousel extends DraggingEvent {
   constructor(container, controller = undefined) {
     super(container)
@@ -320,3 +319,16 @@ class CardCarousel extends DraggingEvent {
 }
 
 const carousel = new CardCarousel(cardsContainer)
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////
+
+
+
+
