@@ -16,3 +16,78 @@ input[type=file]::file-selector-button {
     background: #22c55e;
     color: white;
   }
+
+
+
+  
+  .mycarousell .visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+    
+  }
+  
+  .mycarousell h1 {
+    text-align: center;
+    margin-top: 1em;
+  }
+  
+  .mycarousell .container {
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 2em;
+  }
+  
+  .mycarousell .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 350px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .mycarousell .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
+  
+  .mycarousell .card-carousel.smooth-return {
+    transition: all .2s ease;
+  }
+  
+  .mycarousell .card-carousel .card {
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0,0,0,.5);
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .mycarousell .card.highlight {
+    filter: brightness(1)
+  }
+  
+  
+
+
+
+
